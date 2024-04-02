@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, .wrapper, .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  padding: 0 10px;
+  min-height: 95vh;
+  background: #41436A;
+}
+
+.wrapper {
+  width: 440px;
+  padding: 30px 30px 38px;
+  background: #984063;
+  border-radius: 50px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.wrapper img {
+  max-width: 103px;
+}
+
+.wrapper h1 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+
+.wrapper .content {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content.disable {
+  cursor: no-drop;
+}
+
+.content .column {
+  padding: 0 10px;
+  border-radius: 30px;
+  border: 3px solid #bfbfbf;
+  width: calc(100% / 3 - 7px);
+}
+
+.content .column:hover {
+  transform: translate(-3%, -3%);
+  background-color: #f64668;
+}
+
+.content.disable .column {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.column select {
+  width: 100%;
+  height: 53px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 19px;
+}
+
+.wrapper button {
+  width: 100%;
+  border: 3px solid #bfbfbf;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 17px 0;
+  margin-top: 20px;
+  border-radius: 15px;
+  background: #fe9677;
+}
+
+.wrapper button:hover {
+  transform: translate(0%, -2%);
+  background: #e67351;
+}
+
+.wrapper video,
+.wrapper img#alarmGif {
+  max-width: 100%;
+  border-radius: 30px;
+}
